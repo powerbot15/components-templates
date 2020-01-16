@@ -1,0 +1,16 @@
+<div class="product-list-wrap">
+  <ul class="product-list">
+    <li
+      *ngFor="let product of products; let i = index;"
+      class="product"
+    >
+      <img
+        src="{{product.img}}"
+        alt="product.Title"
+      >
+      <h2>{{product.Title}}</h2>
+      <p>{{product.Description}}</p>
+      <a href="{{product.Url}}">Go to product page</a>
+    </li>
+  </ul>
+</div>

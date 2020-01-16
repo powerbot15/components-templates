@@ -1,0 +1,13 @@
+<div class="products-main">
+  <div class="search">
+    <input
+      type="text"
+      #searchInput
+      (input)="search(searchInput)"
+    >
+  </div>
+  <app-product-list
+    [products] = filteredProducts
+  >
+  </app-product-list>
+</div>
